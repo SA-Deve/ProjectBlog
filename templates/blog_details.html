@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<h1 class="text-center mt-5" id="blogdetailtitle">{{ blogs.title }}</h1>
+
+<h5 class="text-center text-muted mb-5">{{ item.date|date:'F jS Y' }}</h5>
+
+{{ blogs.description|safe }}
+
+{% endblock %}
