@@ -17,6 +17,11 @@
         </h4>
         <p class="post-meta">Posted by
             {{ b.user }} on {{ b.created|date:'M d Y' }}</p>
+        <hr>
+    </div>
+
+    <div class="col-md-2">
+        <a href="{% url 'edit' b.id %}"><span class="badge badge-success ml-auto small badge-pill">Edit</span></a>
     </div>
 </div>
 
